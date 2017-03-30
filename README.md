@@ -10,8 +10,12 @@ Application that consumes services to mount panels of the Ministry of Culture (M
     cd /var/www/pane/Dockerfile && build -t panel .
 ### Rodando container da aplicacao apartir da imagem gerada pelo dockerfile chamada de panel 
     docker run -it -v /var/www:/var/www --name panel panel
-### Dentro do container - Precisa do ID de rede do container para saber use o docker inspect CONTAINERNAME Ex: 172.17.0.1
-### Acessando a pasta do projeto de dentro do container e Subir Servidor da aplicação para ser acessada pelo ip do container e na porta 80
+### Você vai precisar do ID de rede do container para subir o servidor Exemplo de IP: 172.17.0.1
+### Use o seguinte comando para descobrir o IP do Container:
+    docker inspect panel
+### Depois de saber o ip do container acesse o container com 
+    docker attach panel 
+### Para subir o servidor da aplicação e poder ser acessada no seu navegador pelo ip do container e na porta 80
     cd /var/www/panel && http-server -a IPCONTAINER -p 80
 
 ## Tecnologias utilizadas
