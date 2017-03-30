@@ -5,8 +5,8 @@ Application that consumes services to mount panels of the Ministry of Culture (M
 
 ## Tecnologias utilizadas
 - [Angular 1](https://github.com/angular/angular)
-![Angular](https://angular.io/resources/images/logos/angular2/angular.svg)
+<img src="https://angular.io/resources/images/logos/angular2/angular.svg" width="200px">
 - [Yarn](https://github.com/yarnpkg/yarn)
-![Yarn](https://github.com/yarnpkg/assets/raw/master/yarn-kitten-full.png?raw=true)
+<img src="https://github.com/yarnpkg/assets/raw/master/yarn-kitten-full.png?raw=true" width="200px">
 - [Docker](https://github.com/docker/docker)
-![Docker](https://github.com/docker/docker/raw/master/docs/static_files/docker-logo-compressed.png)
+<img src="https://github.com/docker/docker/raw/master/docs/static_files/docker-logo-compressed.png" width="200px">
