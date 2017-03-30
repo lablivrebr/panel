@@ -3,6 +3,17 @@ Aplicação que consome servicos para montar paineis do Ministério da Cultura (
 
 Application that consumes services to mount panels of the Ministry of Culture (MinC)
 
+## Para rodar a aplicação
+### Baixar o codigo da aplicação na pasta /var/www
+    git clone https://github.com/lablivrebr/panel.git /var/www/.
+### Usar o DockerFile
+    cd /var/www/pane/Dockerfile && build -t panel .
+### Rodando container da aplicacao apartir da imagem gerada pelo dockerfile chamada de panel 
+    docker run -it -v /var/www:/var/www --name panel panel
+### Dentro do container - Precisa do ID de rede do container para saber use o docker inspect CONTAINERNAME Ex: 172.17.0.1
+### Acessando a pasta do projeto de dentro do container e Subir Servidor da aplicação para ser acessada pelo ip do container e na porta 80
+    cd /var/www/panel && http-server -a IPCONTAINER -p 80
+
 ## Tecnologias utilizadas
 - [D3js](https://github.com/d3/d3)
 <img src="https://camo.githubusercontent.com/722a5cc12c7d40231ebeb8ca6facdc8547e2abf7/68747470733a2f2f64336a732e6f72672f6c6f676f2e737667" width="100px">
