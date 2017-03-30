@@ -1,0 +1,149 @@
+<!--<div class="md-padding" style="color: #FFFFFF; background-color: rgb(66,66,66); width: 100%; height: 100%;">-->
+<!--<div style="color: #FFFFFF; background-color: rgb(66,66,66); width: 100%; height: 100%;">-->
+<div>
+    <style>
+
+        svg {
+            font: 10px sans-serif;
+        }
+
+        .y.axis path {
+            display: none;
+        }
+
+        .y.axis line {
+            stroke: #fff;
+            stroke-opacity: .2;
+            shape-rendering: crispEdges;
+        }
+
+        .y.axis .zero line {
+            stroke: #000;
+            stroke-opacity: 1;
+        }
+
+        .title {
+            font: 300 78px Helvetica Neue;
+            fill: #666;
+        }
+
+        .birthyear,
+        .age {
+            text-anchor: middle;
+        }
+
+        .birthyear {
+            fill: #fff;
+        }
+
+        rect {
+            fill-opacity: .6;
+            /*fill: #9700e3;*/
+            /*fill: #e377c2;*/
+            fill: green;
+        }
+
+        rect:first-child {
+            /*fill: #1f77b4;*/
+            /*fill: green;*/
+            fill: #00ce00;
+        }
+
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: auto;
+            position: relative;
+            /*width: 960px;*/
+        }
+
+        form {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        path {
+            stroke: #fff;
+            fill-rule: evenodd;
+        }
+
+        #main {
+            float: left;
+            width: 750px;
+        }
+
+        #sidebar {
+            float: right;
+            width: 100px;
+        }
+
+        #sequence {
+            width: 600px;
+            height: 70px;
+        }
+
+        #legend {
+            padding: 10px 0 0 3px;
+        }
+
+        #sequence text, #legend text {
+            font-weight: 600;
+            fill: #fff;
+        }
+
+        #chart {
+            position: relative;
+        }
+
+        #chart path {
+            stroke: #fff;
+        }
+
+        #explanation {
+            position: absolute;
+            top: 260px;
+            left: 305px;
+            width: 140px;
+            text-align: center;
+            /*color: #666;*/
+            color: #FFF;
+            z-index: 1;
+        }
+
+        #percentage {
+            font-size: 2.5em;
+        }
+
+    </style>
+    <!--<svg width="720" height="120">-->
+    <!--<circle cx="40" cy="60" r="10"></circle>-->
+    <!--<circle cx="80" cy="60" r="10"></circle>-->
+    <!--<circle cx="120" cy="60" r="10"></circle>-->
+    <!--</svg>-->
+    <div style="background-color: grey; margin: 0;">
+        Resultado API:
+        {{api}}
+    </div>
+    <div id="grafico" style="background-color: grey;"></div>
+    <div id="grafico2">
+        <form>
+            <label><input type="radio" name="mode" value="size"> Size</label>
+            <label><input type="radio" name="mode" value="count" checked> Count</label>
+        </form>
+    </div>
+    <div id="grafico3" flex style="height: 100%;">
+        <div id="main">
+            <div id="sequence"></div>
+            <div id="chart">
+                <div id="explanation" style="visibility: hidden;">
+                    <span id="percentage"></span><br/>
+                    Trabalhadores no programa
+                </div>
+            </div>
+        </div>
+        <div id="sidebar">
+            <input type="checkbox" id="togglelegend"> Legend<br/>
+            <div id="legend" style="visibility: hidden;"></div>
+        </div>
+    </div>
+</div>

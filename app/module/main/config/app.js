@@ -1,0 +1,1 @@
+let mdlMain = angular.module('main', ['ui.router', 'ngMaterial']);

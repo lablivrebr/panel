@@ -1,0 +1,17 @@
+
+footer {
+    color: #FFFFFF;
+    background-color: rgb(93,64,55);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: transparent;
+    width: 100%;
+}

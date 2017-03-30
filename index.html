@@ -1,0 +1,121 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+
+    <!--<script src="node_modules/angular/angular.js"></script>-->
+    <!--<script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>-->
+    <!--<script src="helloworld.js"></script>-->
+    <!--<style>.active { color: red; font-weight: bold; }</style>-->
+<!--</head>-->
+<!--<body ng-app="helloworld">-->
+<!--<a ui-sref="hello" ui-sref-active="active">Hello</a>-->
+<!--<a ui-sref="about" ui-sref-active="active">About</a>-->
+
+<!--<ui-view></ui-view>-->
+<!--</body>-->
+<!--</html>-->
+
+<html lang="pt-BR" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="app/module/main/css/main.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <base href="/">
+
+    <title>Painel Vale Cultura</title>
+</head>
+<body>
+
+<header>
+    <!--<div ng-include="'module/scrum/client/view/header.ng.html'"></div>-->
+    <div ui-view="header"></div>
+    <!--<div ui-view="header2"></div>-->
+    <!--<div ng-include="'module/scrum/client/view/product-toolbar.ng.html'"></div>-->
+    <!--<div ng-include="'module/admin/client/view/toolbar.ng.html'"></div>-->
+</header>
+<main>
+    <!--<div layout="row">-->
+        <!--<div flex >-->
+            <!--<md-content flex layout-margin>-->
+            <div ui-view="main" style="background-color: rgb(66,66,66);"></div>
+            <!--<div ui-view="mainFade" class="fade"></div>-->
+            <!--<div ui-view="mainFadeInLeftBig" class="fadeLeftBig"></div>-->
+            <!--<div ui-view="mainFadeInRightBig" class="fadeRightBig"></div>-->
+            <!--<div ui-view="mainBounce" class="bounce" style="padding-left: 40px;"></div>-->
+            <!--<div ui-view="mainZoom" class="zoom" style="padding-left: 40px;"></div>-->
+            <!--<div ui-view="main2"></div>-->
+            <!--</md-content>-->
+        <!--</div>-->
+    <!--</div>-->
+</main>
+<footer class="page-footer" style="margin-top: 0px; padding-top: 0px; z-index: 2;">
+    <div ui-view="footer" ></div>
+    <!--<div ng-include="'module/scrum/client/view/footer.ng.html'"></div>-->
+</footer>
+<!--<md-toolbar md-scroll-shrink ng-if="true" >-->
+    <!--<div class="md-toolbar-tools">-->
+        <!--<h3>-->
+            <!--<span>{{title}}</span>-->
+        <!--</h3>-->
+    <!--</div>-->
+<!--</md-toolbar>-->
+<!--<nav>-->
+    <!--<div class="nav-wrapper">-->
+        <!--<a href="#" class="brand-logo">Logo</a>-->
+        <!--<ul id="nav-mobile" class="right hide-on-med-and-down">-->
+            <!--<li><a href="sass.html">Sass</a></li>-->
+            <!--<li><a href="badges.html">Components</a></li>-->
+            <!--<li><a href="collapsible.html">JavaScript</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+<!--</nav>-->
+
+<script src="https://d3js.org/d3.v3.min.js"></script>
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<!--<script src="/node_modules/angular-aria/angular-aria.js"></script>-->
+<!--<script src="/node_modules/angular-animate/angular-animate.js"></script>-->
+<script type="text/javascript" src="/node_modules/angular-material/angular-material.js"></script>
+<script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
+<script type="text/javascript" src="/node_modules/angular-aria/angular-aria.js"></script>
+
+
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+
+
+<script src="app/module/main/config/app.js"></script>
+<script src="app/module/main/config/route.js"></script>
+<script src="app/module/vale-cultura/config/app.js"></script>
+<script src="app/module/vale-cultura/config/route.js"></script>
+<script src="app/module/vale-cultura/controller/painel.js"></script>
+<script src="app/module/vale-cultura/controller/header.js"></script>
+<script src="app/config/app.js"></script>
+
+<!--<script src="helloworld.js"></script>-->
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>-->
+
+<!-- Angular Material Library -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>-->
+</body>
+</html>
